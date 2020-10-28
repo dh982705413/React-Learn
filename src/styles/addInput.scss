@@ -1,0 +1,24 @@
+.input-container{
+    display: flex;
+    align-items: center;
+    input{
+        outline: none;
+        border: 1px solid #b0b0b0;
+        border-radius: none;
+        padding: 10px;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    button{
+        outline: none;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        
+        background-color: #fff;
+        color: rgb(28, 94, 156);
+        box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.3);
+
+        cursor: pointer;
+    }
+}

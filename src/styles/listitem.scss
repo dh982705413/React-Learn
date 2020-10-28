@@ -1,0 +1,60 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    width: 280px;
+    height: 35px;
+
+    margin: 10px 0;
+    padding: 20px 10px;
+
+    border: 1px solid #fff;
+    box-shadow: 0px 2px 4px rgba($color: #000, $alpha: 0.2);
+    border-radius: 20px;
+
+    animation: fade ease-in-out 0.5s 1;
+
+    .title {
+        flex: 1;
+        padding-left: 10px;
+    }
+    .btn {
+        outline: none;
+        border: none;
+
+        color: #fff;
+
+        padding: 2px 6px;
+        border-radius: 50%;
+        font-size: 14px;
+        cursor: pointer;
+
+        transition: 0.5s;
+    }
+    .delete-btn {
+        background-color: red;
+
+        &:hover {
+            opacity: 0.7;
+            transform: scale(1.2);
+        }
+    }
+    .ok-btn {
+        background-color: green;
+        &:hover {
+            opacity: 0.7;
+            transform: scale(1.2);
+        }
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
